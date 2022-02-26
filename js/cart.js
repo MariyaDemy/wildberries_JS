@@ -1,10 +1,9 @@
 const cart = function () {
-    const cartBtn = document.querySelector('.button-cart') //перебирает весь бади
-    const cart = document.getElementById('modal-cart'); // заканчивает поиск при нахождении нужного элемента
-    const closeBtn = cart.querySelector('.modal-close'); // поиск внутри элемента cart, только по queryS.. or queryS..All
-
+    const cartBtn = document.querySelector('.button-cart')
+    const cart = document.getElementById('modal-cart');
+    const closeBtn = cart.querySelector('.modal-close');
     cartBtn.addEventListener('click', function () {
-        cart.style.display = 'flex';
+        cart.style.display = 'flex'; //add inline styles
     })
 
     closeBtn.addEventListener('click', function () {
